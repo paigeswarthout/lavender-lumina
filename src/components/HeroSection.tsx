@@ -35,7 +35,7 @@ const HeroSection = () => {
     <section
       id="home"
       ref={sectionRef}
-      className="min-h-screen flex items-center justify-center pt-20 pb-16 px-6 transition-opacity duration-1000 opacity-0 translate-y-10"
+      className="min-h-screen flex items-center justify-center pt-20 pb-16 px-6 transition-opacity duration-1000 opacity-0 translate-y-10 relative z-10"
     >
       <div className="max-w-5xl w-full space-y-8">
         <div className="space-y-6 text-center md:text-left">

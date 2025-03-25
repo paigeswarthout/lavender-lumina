@@ -63,7 +63,7 @@ const ContactSection = () => {
     <section
       id="contact"
       ref={sectionRef}
-      className="py-20 px-6 bg-secondary/50 transition-opacity duration-1000 opacity-0 translate-y-10"
+      className="py-20 px-6 bg-secondary/50 transition-opacity duration-1000 opacity-0 translate-y-10 relative z-10"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -100,7 +100,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium">Email</h4>
-                    <p className="text-sm text-muted-foreground">pswarthout@example.com</p>
+                    <p className="text-sm text-muted-foreground">pas265@miami.edu</p>
                   </div>
                 </div>
                 
@@ -113,7 +113,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium">Location</h4>
-                    <p className="text-sm text-muted-foreground">New York, NY</p>
+                    <p className="text-sm text-muted-foreground">Miami, FL</p>
                   </div>
                 </div>
               </div>

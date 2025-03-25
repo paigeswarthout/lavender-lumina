@@ -5,12 +5,12 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-background border-t py-12">
+    <footer className="bg-background border-t py-12 relative z-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center space-y-6">
           <div className="flex space-x-6">
             <a
-              href="mailto:pswarthout@example.com"
+              href="mailto:pas265@miami.edu"
               aria-label="Email"
               className="text-muted-foreground hover:text-primary transition-colors"
             >

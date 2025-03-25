@@ -42,7 +42,7 @@ const AboutSection = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden border shadow-md">
                 <img
-                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  src="/lovable-uploads/b43a4cd1-34db-428e-b32b-8c3496628bb5.png"
                   alt="Paige Swarthout"
                   className="w-full h-auto object-cover"
                 />
@@ -90,13 +90,13 @@ const AboutSection = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Education</h4>
                   <p className="text-sm text-muted-foreground">
-                    BS in Computer Science & Interactive Media
+                    BA in Computer Science & Interactive Media with a minor in Marketing
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">Location</h4>
                   <p className="text-sm text-muted-foreground">
-                    New York, NY
+                    Miami, FL
                   </p>
                 </div>
               </div>
