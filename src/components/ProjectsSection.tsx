@@ -7,28 +7,43 @@ import AnimatedText from "./AnimatedText";
 const projects = [
   {
     id: 1,
-    title: "Interactive Data Visualization",
-    description: "An interactive web application that visualizes complex datasets through engaging and intuitive interfaces.",
-    imageSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    tags: ["React", "D3.js", "Data Visualization", "UX Design"],
+    title: "Unity Cooking Game",
+    description: "A 3D kitchen game created for my Creative Coding class. Used C# scripting and Unity’s physics engine to manage gameplay interactions.",
+    imageSrc: "./images/cooking-game.png",
+    tags: ["C#", "Unity", "Game Development", "Creative Coding"],
     link: "#",
   },
   {
     id: 2,
-    title: "Augmented Reality Experience",
-    description: "A mobile AR application that overlays digital content on the physical world, creating immersive educational experiences.",
+    title: "EcoBite – Food Waste Tracker ",
+    description: "Designed a responsive website prototype to track food waste across the supply chain, from producers to consumers. Won 3rd place in the 2025 Horizon AI Hackathon within the environmental track. Focused on UI/UX flow, accessibility, and user empathy.",
     imageSrc: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    tags: ["Unity", "AR", "Mobile Development", "3D Modeling"],
+    tags: ["Figma", "User Interaction Design", "Mobile Development", "Prototyping"],
     link: "#",
   },
   {
     id: 3,
-    title: "Algorithmic Art Generator",
-    description: "A creative coding project that generates unique artwork based on mathematical algorithms and user input.",
+    title: "Dynamic To-Do List App",
+    description: "A dynamic task management app using SQL-backed lists. Users can create and manage multiple custom to-do lists with clean Bootstrap styling and backend CRUD operations.",
+    imageSrc: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    tags: ["Node.js", "SQL", "JavaScript", "Bootstrap", "Web Application", "Full Stack"],
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "Hand-Tracking Drawing Tool",
+    description: "Used machine learning and hand tracking to create an interactive canvas where users draw based on hand movement, without physical input devices.",
     imageSrc: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     tags: ["Processing", "p5.js", "Generative Art", "Algorithms"],
     link: "#",
-  },
+  },{
+    id: 5,
+    title: "Scroll-Reactive Image Gallery",
+    description: "Developed a smooth-scrolling website where images dynamically grow and shrink based on the user’s scroll position, creating a fluid, creative, and engaging browsing experience..",
+    imageSrc: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    tags: ["JavaScript", "Animation", "HTML", "CSS", "Web Design", "Front-end Development"],
+    link: "#",
+  }
 ];
 
 const ProjectsSection = () => {

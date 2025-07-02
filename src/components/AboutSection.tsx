@@ -70,7 +70,7 @@ const AboutSection = () => {
             <AnimatedText delay={500}>
               <p className="text-muted-foreground mb-4">
                 I'm a Computer Science and Interactive Media student passionate about creating 
-                digital experiences that are both functional and beautiful. With a strong 
+                digital experiences that are both functional and aesthetic. With a strong 
                 foundation in programming and design, I enjoy tackling complex problems and 
                 turning ideas into reality.
               </p>

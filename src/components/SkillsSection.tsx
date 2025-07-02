@@ -6,25 +6,21 @@ import AnimatedText from "./AnimatedText";
 // Sample skills data
 const skills = {
   programming: [
-    { name: "JavaScript", level: "advanced" },
-    { name: "TypeScript", level: "intermediate" },
-    { name: "Python", level: "advanced" },
-    { name: "Java", level: "intermediate" },
-    { name: "C++", level: "intermediate" },
+    { name: "JavaScript", level: "intermediate" },
+    { name: "Python", level: "intermediate" },
+    { name: "Java", level: "advanced" },
+    { name: "C#", level: "intermediate" },
     { name: "HTML/CSS", level: "advanced" },
   ],
   frameworks: [
-    { name: "React", level: "advanced" },
+    { name: "React", level: "beginner" },
     { name: "Node.js", level: "intermediate" },
     { name: "Express", level: "intermediate" },
-    { name: "Three.js", level: "intermediate" },
     { name: "Unity", level: "intermediate" },
-    { name: "p5.js", level: "advanced" },
+    { name: "p5.js", level: "intermediate" },
   ],
   design: [
     { name: "Figma", level: "advanced" },
-    { name: "Adobe XD", level: "intermediate" },
-    { name: "Photoshop", level: "intermediate" },
     { name: "Illustrator", level: "intermediate" },
     { name: "UI/UX Design", level: "intermediate" },
     { name: "Wireframing", level: "advanced" },
