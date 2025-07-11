@@ -17,7 +17,7 @@ const projects = [
     id: 2,
     title: "EcoBite – Food Waste Tracker ",
     description: "Designed a responsive website prototype to track food waste across the supply chain, from producers to consumers. Won 3rd place in the 36 hour 2025 Horizon AI Hackathon within the environmental track. Focused on UI/UX flow, accessibility, and user empathy.",
-    imageSrc: "./images/ecoByte.png",
+    imageSrc: "./images/ecoBite.png",
     tags: ["Figma", "User Interaction Design", "Mobile Development", "Prototyping"],
     link: "#",
   },
@@ -27,7 +27,7 @@ const projects = [
     description: "A dynamic task management app using SQL-backed lists. Users can create and manage multiple custom to-do lists with clean Bootstrap styling and backend CRUD operations.",
     imageSrc: "./images/trackIt.png",
     tags: ["Node.js", "SQL", "JavaScript", "Bootstrap", "Web Application", "Full Stack"],
-    link: "#",
+    link: "https://github.com/paigeswarthout/pas265_dd_final",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const projects = [
     description: "Developed a smooth-scrolling website where images dynamically grow and shrink based on the user’s scroll position, creating a fluid, creative, and engaging browsing experience..",
     imageSrc: "./images/scroll.png",
     tags: ["JavaScript", "Animation", "HTML", "CSS", "Web Design", "Front-end Development"],
-    link: "#",
+    link: "https://github.com/paigeswarthout/project2-interactive",
   }
 ];
 
