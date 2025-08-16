@@ -69,8 +69,10 @@ const Navbar = () => {
                 key={link.name}
                 href={link.href}
                 className={cn(
-                  "text-foreground/80 hover:text-foreground transition-colors pb-1",
-                  activeSection === sectionId && "border-b-2 border-primary"
+                  "relative pb-1 text-foreground/80 hover:text-foreground transition-colors",
+                  "after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out",
+                  (activeSection === sectionId || false) &&
+                    "text-foreground after:w-full"
                 )}
               >
                 {link.name}
