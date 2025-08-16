@@ -11,7 +11,7 @@ const projects = [
     description: "A 3D kitchen game created for my Creative Coding class. Used C# scripting and Unity’s physics engine to manage gameplay interactions.",
     imageSrc: "./images/cooking-game.png",
     tags: ["C#", "Unity", "Game Development", "Creative Coding"],
-    link: "#",
+    link: "https://drive.google.com/file/d/1Knwz9iORWvBP5ZVi55slZmLPlKW8AtEe/view?usp=sharing",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const projects = [
     description: "Designed a responsive website prototype to track food waste across the supply chain, from producers to consumers. Won 3rd place in the 36 hour 2025 Horizon AI Hackathon within the environmental track. Focused on UI/UX flow, accessibility, and user empathy.",
     imageSrc: "./images/ecoBite.png",
     tags: ["Figma", "User Interaction Design", "Mobile Development", "Prototyping"],
-    link: "#",
+    link: "https://www.figma.com/proto/vYVOKD6HprBlnsI1vP90bB/EcoBite--Community-?node-id=1-2&p=f&t=sZSldWd1oJIz8Cxq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const projects = [
     description: "Used machine learning and hand tracking to create an interactive canvas where users draw based on hand movement, without physical input devices.",
     imageSrc: "./images/handTracking.png",
     tags: ["Processing", "p5.js", "Generative Art", "Algorithms"],
-    link: "#",
+    link: "https://editor.p5js.org/pas265/full/CmhWvE5xF",
   },{
     id: 5,
     title: "Scroll-Reactive Image Gallery",
