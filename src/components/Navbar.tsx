@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -16,17 +15,28 @@ const navLinks = [
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 10);
+
+      // detect active section
+      let current = "home";
+      navLinks.forEach((link) => {
+        const section = document.querySelector(link.href);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            current = link.href.substring(1); // remove "#"
+          }
+        }
+      });
+      setActiveSection(current);
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll(); // run on mount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -52,15 +62,21 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="link-underline text-foreground/80 hover:text-foreground transition-colors"
-            >
-              {link.name}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const sectionId = link.href.substring(1);
+            return (
+              <a
+                key={link.name}
+                href={link.href}
+                className={cn(
+                  "text-foreground/80 hover:text-foreground transition-colors pb-1",
+                  activeSection === sectionId && "border-b-2 border-primary"
+                )}
+              >
+                {link.name}
+              </a>
+            );
+          })}
           <ThemeToggle />
         </nav>
 
