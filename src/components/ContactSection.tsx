@@ -57,7 +57,7 @@ export default function ContactSection() {
     <section
       id="contact"
       ref={sectionRef}
-      className="py-20 px-6 relative z-10 transition-opacity duration-1000 opacity-0 translate-y-10"
+      className="py-20 px-6 relative z-10 transition-opacity duration-1000 opacity-0"
     >
       {/* Background decorations */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-background pointer-events-none" />
