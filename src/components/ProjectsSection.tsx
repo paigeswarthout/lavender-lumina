@@ -36,13 +36,22 @@ const projects = [
     imageSrc: "./images/handTracking.png",
     tags: ["Processing", "p5.js", "Generative Art", "Algorithms"],
     link: "https://editor.p5js.org/pas265/full/CmhWvE5xF",
-  },{
+  },
+  {
     id: 5,
     title: "Scroll-Reactive Image Gallery",
     description: "Developed a smooth-scrolling website where images dynamically grow and shrink based on the user’s scroll position, creating a fluid, creative, and engaging browsing experience..",
     imageSrc: "./images/scroll.png",
     tags: ["JavaScript", "Animation", "HTML", "CSS", "Web Design", "Front-end Development"],
     link: "https://github.com/paigeswarthout/project2-interactive",
+  },
+  {
+    id: 6,
+    title: "Study App Prototype",
+    description: "Designed an interactive study app prototype focused on quiz-based learning and user progress tracking. Built in Figma with variables, component variants, and prototyping logic to simulate real app behavior, including dynamic progress bars, question states, and user feedback. Emphasized usability, clarity, and engaging micro-interactions.",
+    imageSrc: "./images/figma.png",
+    tags: ["Figma", "UI/UX Design", "Prototyping", "Interaction Design", "Design Systems", "User Flows"],
+    link: "https://www.figma.com/proto/ZXdpjStDzpJZeJTej1S38F/Untitled?node-id=180-438&p=f&t=RQs3EnsncYbHHhFD-1&scaling=scale-down&content-scaling=fixed&page-id=180%3A436&starting-point-node-id=180%3A438&show-proto-sidebar=1",
   }
 ];
 
