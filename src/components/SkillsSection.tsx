@@ -11,6 +11,7 @@ const skills = {
     { name: "Java", level: "advanced" },
     { name: "C#", level: "intermediate" },
     { name: "HTML/CSS", level: "advanced" },
+    { name: "C", level: "beginner" },
   ],
   frameworks: [
     { name: "React", level: "beginner" },
