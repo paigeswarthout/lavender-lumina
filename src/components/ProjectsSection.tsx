@@ -57,7 +57,7 @@ const projects = [
     id: 6,
     title: "Physical Computing Projects",
     description: "Created interactive physical computing projects built with Python, microcontrollers, and 3D-printed components, using sensors, audio, and light to explore input and output.",
-    imageSrc: "./images/diorama.HEIC",
+    imageSrc: "./images/diorama.png",
     tags: ["Python", "Physical Computing", "Microcontrollers", "Sensors", "Interactive Installation", "3D Printing", "Creative Coding"],
     link: "https://enchanting-chip-133.notion.site/Physical-Computing-Portfolio-2e36efac892980d4a096eb229b381337?source=copy_link",
   }
