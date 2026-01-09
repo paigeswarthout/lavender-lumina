@@ -52,6 +52,14 @@ const projects = [
     imageSrc: "./images/figma.png",
     tags: ["Figma", "UI/UX Design", "Prototyping", "Interaction Design", "Design Systems", "User Flows"],
     link: "https://www.figma.com/proto/ZXdpjStDzpJZeJTej1S38F/Untitled?node-id=180-438&p=f&t=RQs3EnsncYbHHhFD-1&scaling=scale-down&content-scaling=fixed&page-id=180%3A436&starting-point-node-id=180%3A438&show-proto-sidebar=1",
+  },
+  {
+    id: 6,
+    title: "Physical Computing Projects",
+    description: "Created interactive physical computing projects built with Python, microcontrollers, and 3D-printed components, using sensors, audio, and light to explore input and output.",
+    imageSrc: "./images/figma.png",
+    tags: ["Python", "Physical Computing", "Microcontrollers", "Sensors", "Interactive Installation", "3D Printing", "Creative Coding"],
+    link: "https://enchanting-chip-133.notion.site/Physical-Computing-Portfolio-2e36efac892980d4a096eb229b381337?source=copy_link",
   }
 ];
 
