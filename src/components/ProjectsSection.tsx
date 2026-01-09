@@ -12,7 +12,7 @@ const projects = [
     imageSrc: "./images/cooking-game.png",
     tags: ["C#", "Unity", "Game Development", "Creative Coding"],
     link: "https://drive.google.com/file/d/1Knwz9iORWvBP5ZVi55slZmLPlKW8AtEe/view?usp=sharing",
-  },
+  }, 
   {
     id: 2,
     title: "EcoBite – Food Waste Tracker ",
@@ -57,7 +57,7 @@ const projects = [
     id: 6,
     title: "Physical Computing Projects",
     description: "Created interactive physical computing projects built with Python, microcontrollers, and 3D-printed components, using sensors, audio, and light to explore input and output.",
-    imageSrc: "./images/diorama.png",
+    imageSrc: "./images/diorama.HEIC",
     tags: ["Python", "Physical Computing", "Microcontrollers", "Sensors", "Interactive Installation", "3D Printing", "Creative Coding"],
     link: "https://enchanting-chip-133.notion.site/Physical-Computing-Portfolio-2e36efac892980d4a096eb229b381337?source=copy_link",
   }
