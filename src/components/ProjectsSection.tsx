@@ -64,8 +64,8 @@ const projects = [
   {
     id: 8,
     title: "Powertime Website Redesign",
-    description: "Redesigned .",
-    imageSrc: "./images/diorama.png",
+    description: "Redesigned the Powertime website with a focus on usability and visual clarity using Figma to create a responsive interface that streamlines prepaid electricity purchases and enhances the overall user experience through intuitive navigation and modern UI design..",
+    imageSrc: "./images/powertime.png",
     tags: ["Figma", "UX/UI Design", "Prototyping", "Interaction Design", "User Flows", "Consumer Platform"],
     link: "https://www.figma.com/proto/gQPWgMYlbGz9K9rFbB9lLk/Powertime-redesign?node-id=132-356&p=f&t=eUMf42N8OcV6lZX3-1&scaling=scale-down&content-scaling=fixed&page-id=132%3A119&starting-point-node-id=132%3A356",
   }
