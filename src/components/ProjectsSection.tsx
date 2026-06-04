@@ -51,7 +51,7 @@ const projects = [
     description: "Designed an interactive study app prototype through Figma using variables, component variants, and prototyping logic to simulate real app behavior, including dynamic progress bars, question states, and user feedback.",
     imageSrc: "./images/figma.png",
     tags: ["Figma", "UI/UX Design", "Prototyping", "Interaction Design", "Design Systems", "User Flows"],
-    link: "https://www.figma.com/proto/ZXdpjStDzpJZeJTej1S38F/Untitled?node-id=180-438&p=f&t=RQs3EnsncYbHHhFD-1&scaling=scale-down&content-scaling=fixed&page-id=180%3A436&starting-point-node-id=180%3A438&show-proto-sidebar=1",
+    link: "https://www.figma.com/proto/ZXdpjStDzpJZeJTej1S38F/Untitled?node-id=180-438&p=f&t=RQs3EnsncYbHHhFD-1&scaling=scale-down&content-scaling=fixed&page-id=180%3A436&starting-point-node-id=180%3A438&show-proto-sidebar=1", https://docs.google.com/presentation/d/1EZpLuOpJRvu5eWlcmzBCjXceE8C6WP70Y7VtYqUfJOc/edit?usp=sharing,
   },
   {
     id: 7,
