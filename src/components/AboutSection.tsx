@@ -63,25 +63,28 @@ const AboutSection = () => {
             
             <AnimatedText delay={300}>
               <h3 className="text-2xl md:text-4xl font-bold mb-6">
-                Blending Technology & Creativity
+                Where Design Meets Code
               </h3>
             </AnimatedText>
             
             <AnimatedText delay={500}>
               <p className="text-muted-foreground mb-4">
-                I'm a Computer Science and Interactive Media student passionate about creating 
-                digital experiences that are both functional and aesthetic. With a strong 
-                foundation in programming and design, I enjoy tackling complex problems and 
-                turning ideas into reality.
+                I'm a Computer Science and Interactive Media student at the University of Miami
+                who designs and builds digital products, from first sketches in Figma to working,
+                tested experiences. I care about interfaces that feel clear, intentional, and a
+                little delightful to use.
               </p>
             </AnimatedText>
             
             <AnimatedText delay={700}>
               <p className="text-muted-foreground mb-6">
-                When I'm not coding or designing, you can find me exploring new technologies, 
-                working on personal projects, or collaborating with other creative minds. I believe 
-                in the power of technology to transform and enhance our lives, and I'm excited to 
-                contribute to that vision.
+                I've designed for real clients and live products: redesigning the website for an
+                energy platform serving 150+ municipalities during a UX internship in Cape Town,
+                and completing a 12-week UI/UX internship at a health and wellness startup. Today
+                I manage four XR/VR research projects as a product manager at the Virtual
+                Experiences Simulation Lab, keeping researchers, developers, and faculty working
+                toward the same goals. Whether I'm designing, building, or leading a project, I love
+                turning complex ideas into experiences that feel simple.
               </p>
             </AnimatedText>
             

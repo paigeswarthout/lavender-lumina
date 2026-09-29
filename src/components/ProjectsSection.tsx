@@ -3,58 +3,25 @@ import { useEffect, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import AnimatedText from "./AnimatedText";
 
-// Sample projects data
+// Projects, most recent first
 const projects = [
   {
     id: 1,
-    title: "Unity Cooking Game",
-    description: "A 3D kitchen game created for my Creative Coding class. Used C# scripting and Unity’s physics engine to manage gameplay interactions.",
-    imageSrc: "./images/cooking-game.png",
-    tags: ["C#", "Unity", "Game Development", "Creative Coding"],
-    link: "https://drive.google.com/file/d/1Knwz9iORWvBP5ZVi55slZmLPlKW8AtEe/view?usp=sharing",
-  }, 
+    title: "Alive – UI/UX Design Internship",
+    description: "Completed a 12-week UI/UX design internship at an early-stage health and wellness startup, designing screens, prototypes, and animations in Figma within the company's design system and presenting work at weekly design critiques. Full case study coming soon.",
+    imageSrc: "./images/alive-certificate.jpg",
+    tags: ["Figma", "UI/UX Design", "Design Systems", "Prototyping", "Animation", "Health Tech"],
+  },
   {
     id: 2,
-    title: "EcoBite – Food Waste Tracker ",
-    description: "Designed a responsive website prototype to track food waste across the supply chain, from producers to consumers. Won 3rd place in the 36 hour 2025 Horizon AI Hackathon within the environmental track. Focused on UI/UX flow, accessibility, and user empathy.",
-    imageSrc: "./images/ecoBite.png",
-    tags: ["Figma", "User Interaction Design", "Mobile Development", "Prototyping"],
-    link: "https://www.figma.com/proto/vYVOKD6HprBlnsI1vP90bB/EcoBite--Community-?node-id=1-2&p=f&t=sZSldWd1oJIz8Cxq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
+    title: "Powertime Website Redesign",
+    description: "Independently redesigned all 7 screens of the Powertime website, a South African prepaid electricity platform serving 150+ municipalities, during a UX internship in Cape Town. Used Figma to streamline the purchase flow, sharpen navigation and visual hierarchy, and improve accessibility. The client implemented the full redesign.",
+    imageSrc: "./images/powertime.png",
+    tags: ["Figma", "UX/UI Design", "Prototyping", "Interaction Design", "User Flows", "Consumer Platform"],
+    link: "https://www.figma.com/proto/gQPWgMYlbGz9K9rFbB9lLk/Powertime-redesign?node-id=132-356&p=f&t=eUMf42N8OcV6lZX3-1&scaling=scale-down&content-scaling=fixed&page-id=132%3A119&starting-point-node-id=132%3A356",
   },
   {
     id: 3,
-    title: "TrackIt! - Dynamic To-Do List App",
-    description: "A dynamic task management app using SQL-backed lists. Users can create and manage multiple custom to-do lists with clean Bootstrap styling and backend CRUD operations.",
-    imageSrc: "./images/trackIt.png",
-    tags: ["Node.js", "SQL", "JavaScript", "Bootstrap", "Web Application", "Full Stack"],
-    link: "https://github.com/paigeswarthout/pas265_dd_final",
-  },
-  {
-    id: 4,
-    title: "Hand-Tracking Drawing Tool",
-    description: "Used machine learning and hand tracking to create an interactive canvas where users draw based on hand movement, without physical input devices.",
-    imageSrc: "./images/handTracking.png",
-    tags: ["Processing", "p5.js", "Generative Art", "Algorithms"],
-    link: "https://editor.p5js.org/pas265/full/CmhWvE5xF",
-  },
-  {
-    id: 5,
-    title: "Scroll-Reactive Image Gallery",
-    description: "Developed a smooth-scrolling website where images dynamically grow and shrink based on the user’s scroll position, creating a fluid, creative, and engaging browsing experience..",
-    imageSrc: "./images/scroll.png",
-    tags: ["JavaScript", "Animation", "HTML", "CSS", "Web Design", "Front-end Development"],
-    link: "https://github.com/paigeswarthout/project2-interactive",
-  },
-  {
-    id: 6,
-    title: "Study App Prototype",
-    description: "Designed an interactive study app prototype through Figma using variables, component variants, and prototyping logic to simulate real app behavior, including dynamic progress bars, question states, and user feedback.",
-    imageSrc: "./images/figma.png",
-    tags: ["Figma", "UI/UX Design", "Prototyping", "Interaction Design", "Design Systems", "User Flows"],
-    link: "https://www.figma.com/proto/ZXdpjStDzpJZeJTej1S38F/Untitled?node-id=180-438&p=f&t=RQs3EnsncYbHHhFD-1&scaling=scale-down&content-scaling=fixed&page-id=180%3A436&starting-point-node-id=180%3A438&show-proto-sidebar=1", https://docs.google.com/presentation/d/1EZpLuOpJRvu5eWlcmzBCjXceE8C6WP70Y7VtYqUfJOc/edit?usp=sharing,
-  },
-  {
-    id: 7,
     title: "Physical Computing Projects",
     description: "Created interactive physical computing projects built with Python, microcontrollers, and 3D-printed components, using sensors, audio, and light to explore input and output.",
     imageSrc: "./images/diorama.png",
@@ -62,12 +29,53 @@ const projects = [
     link: "https://enchanting-chip-133.notion.site/Physical-Computing-Portfolio-2e36efac892980d4a096eb229b381337?source=copy_link",
   },
   {
+    id: 4,
+    title: "Study App Prototype",
+    description: "Designed an interactive study app prototype through Figma using variables, component variants, and prototyping logic to simulate real app behavior, including dynamic progress bars, question states, and user feedback.",
+    imageSrc: "./images/figma.png",
+    tags: ["Figma", "UI/UX Design", "Prototyping", "Interaction Design", "Design Systems", "User Flows"],
+    link: "https://www.figma.com/proto/ZXdpjStDzpJZeJTej1S38F/Untitled?node-id=180-438&p=f&t=RQs3EnsncYbHHhFD-1&scaling=scale-down&content-scaling=fixed&page-id=180%3A436&starting-point-node-id=180%3A438&show-proto-sidebar=1",
+    // Slides: https://docs.google.com/presentation/d/1EZpLuOpJRvu5eWlcmzBCjXceE8C6WP70Y7VtYqUfJOc/edit?usp=sharing
+  },
+  {
+    id: 5,
+    title: "EcoBite – Food Waste Tracker ",
+    description: "Designed a responsive website prototype to track food waste across the supply chain, from producers to consumers. Won 3rd place in the 36 hour 2025 Horizon AI Hackathon within the environmental track. Focused on UI/UX flow, accessibility, and user empathy.",
+    imageSrc: "./images/ecoBite.png",
+    tags: ["Figma", "User Interaction Design", "Mobile Development", "Prototyping"],
+    link: "https://www.figma.com/proto/vYVOKD6HprBlnsI1vP90bB/EcoBite--Community-?node-id=1-2&p=f&t=sZSldWd1oJIz8Cxq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
+  },
+  {
+    id: 6,
+    title: "TrackIt! - Dynamic To-Do List App",
+    description: "A dynamic task management app using SQL-backed lists. Users can create and manage multiple custom to-do lists with clean Bootstrap styling and backend CRUD operations.",
+    imageSrc: "./images/trackIt.png",
+    tags: ["Node.js", "SQL", "JavaScript", "Bootstrap", "Web Application", "Full Stack"],
+    link: "https://github.com/paigeswarthout/pas265_dd_final",
+  },
+  {
+    id: 7,
+    title: "Hand-Tracking Drawing Tool",
+    description: "Used machine learning and hand tracking to create an interactive canvas where users draw based on hand movement, without physical input devices.",
+    imageSrc: "./images/handTracking.png",
+    tags: ["Processing", "p5.js", "Generative Art", "Algorithms"],
+    link: "https://editor.p5js.org/pas265/full/CmhWvE5xF",
+  },
+  {
     id: 8,
-    title: "Powertime Website Redesign",
-    description: "Redesigned the Powertime website with a focus on usability and visual clarity using Figma to create a responsive interface that streamlines prepaid electricity purchases and enhances the overall user experience through intuitive navigation and modern UI design..",
-    imageSrc: "./images/powertime.png",
-    tags: ["Figma", "UX/UI Design", "Prototyping", "Interaction Design", "User Flows", "Consumer Platform"],
-    link: "https://www.figma.com/proto/gQPWgMYlbGz9K9rFbB9lLk/Powertime-redesign?node-id=132-356&p=f&t=eUMf42N8OcV6lZX3-1&scaling=scale-down&content-scaling=fixed&page-id=132%3A119&starting-point-node-id=132%3A356",
+    title: "Scroll-Reactive Image Gallery",
+    description: "Developed a smooth-scrolling website where images dynamically grow and shrink based on the user’s scroll position, creating a fluid, creative, and engaging browsing experience.",
+    imageSrc: "./images/scroll.png",
+    tags: ["JavaScript", "Animation", "HTML", "CSS", "Web Design", "Front-end Development"],
+    link: "https://github.com/paigeswarthout/project2-interactive",
+  },
+  {
+    id: 9,
+    title: "Unity Cooking Game",
+    description: "A 3D kitchen game created for my Creative Coding class. Used C# scripting and Unity’s physics engine to manage gameplay interactions.",
+    imageSrc: "./images/cooking-game.png",
+    tags: ["C#", "Unity", "Game Development", "Creative Coding"],
+    link: "https://drive.google.com/file/d/1Knwz9iORWvBP5ZVi55slZmLPlKW8AtEe/view?usp=sharing",
   }
 ];
 
